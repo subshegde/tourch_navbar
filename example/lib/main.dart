@@ -26,18 +26,18 @@ class Example extends StatefulWidget {
   State<Example> createState() => _ExampleState();
 }
 
-final List<Color> gradient1 = [
+final List<Color> tourchColors1 = [
   Colors.green.withOpacity(0.8),
   Colors.green.withOpacity(0.5),
   Colors.transparent
 ];
-final List<Color> gradient2 = [
+final List<Color> tourchColors2 = [
   Colors.blue.withOpacity(0.8),
   Colors.blue.withOpacity(0.5),
   Colors.transparent
 ];
 
-final List<Color> gradient3 = [
+final List<Color> tourchColors3 = [
   Colors.purple.withOpacity(0.8),
   Colors.purple.withOpacity(0.5),
   Colors.transparent
@@ -49,7 +49,7 @@ class _ExampleState extends State<Example> {
     return Scaffold(
       backgroundColor: Colors.black,
       bottomNavigationBar: TourchNavbarSub(
-        tourchColors: gradient3,
+        tourchColors: tourchColors3,
         iconColor: const Color.fromARGB(255, 162, 79, 176),
         selectedItemColor: Colors.purple,
         icons: const [IconlyLight.home, IconlyLight.search, IconlyLight.category, IconlyLight.setting, IconlyLight.profile],

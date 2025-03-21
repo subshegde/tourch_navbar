@@ -81,7 +81,7 @@ class TourchNavbarSubState extends State<TourchNavbarSub> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: List.generate(widget.icons.length, (index) {
-                      return BottomNavBTN(
+                      return BottomNavButton(
                         onPressed: (val) {
                           setState(() {
                             _currentIndex = val;
@@ -100,7 +100,7 @@ class TourchNavbarSubState extends State<TourchNavbarSub> {
                   duration: const Duration(milliseconds: 300),
                   curve: Curves.decelerate,
                   top: 0,
-                  left: animatedPositionedLEftValue(_currentIndex),
+                  left: animatedPositionedLeftValue(_currentIndex),
                   child: Column(
                     children: [
                       Container(
@@ -152,7 +152,7 @@ class AppSizes {
 }
 
 
-double animatedPositionedLEftValue(int currentIndex) {
+double animatedPositionedLeftValue(int currentIndex) {
   switch (currentIndex) {
     case 0:
       return AppSizes.blockSizeHorizontal * 5.5;
@@ -169,14 +169,14 @@ double animatedPositionedLEftValue(int currentIndex) {
   }
 }
 
-class BottomNavBTN extends StatelessWidget {
+class BottomNavButton extends StatelessWidget {
   final Function(int) onPressed;
   final IconData icon;
   final int index;
   final int currentIndex;
   final Color? iconColor;
 
-  const BottomNavBTN({
+  const BottomNavButton({
     super.key,
     required this.icon,
     required this.onPressed,
