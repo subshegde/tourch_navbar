@@ -1,5 +1,12 @@
 # Tourch Navbar
 
+![touch_navbar](https://github.com/user-attachments/assets/13ac3146-b668-4121-b36e-42152c850c36)
+
+
+https://github.com/user-attachments/assets/89871e45-ab92-46de-be26-74c2bc14ea92
+
+
+
 **Overview**: 
   - A customizable and animated bottom navigation bar for Flutter with smooth transitions, gradient effects, and responsive design.
 
